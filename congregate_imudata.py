@@ -4,7 +4,7 @@ import os.path
 
 GESTURES = ["random0","random5","test0","test1"] #different names
 MAIN_GESTURE= ["random","test"] # e.g walk
-clean_dir = '/Users/soledqdli/Desktop/Internship/movuino_data/clean_data/test_data'
+clean_dir = '/Users/soledqdli/Desktop/Internship/movuino_data/clean_data/clean_test_data'
 merge_dir = '/Users/soledqdli/Desktop/Internship/movuino_data/congregate_data/complete'
 gesture = "r"
 file_holder = []
@@ -21,6 +21,7 @@ def merge_data(gesture_name):
     for i in range(len(file_holder)):
       dir = os.path.join(path, str(file_holder[i]))
       df = pd.read_csv(dir, index_col=[0])
+      df["activity"] = gesture_name
       dfs = dfs.append(df).reset_index(drop=True)
     # Save the separate files from one recording into one file
     mergeName = os.path.join(merge_dir, gesture_name + ".csv")
@@ -29,10 +30,24 @@ def merge_data(gesture_name):
     # return the path of the merged data file
     return mergeName
 
+def complete_file(gesture_lst, name):
+  dfs = pd.DataFrame()
+  for i in gesture_lst:
+    dir = os.path.join(merge_dir, i + ".csv")
+    df = pd.read_csv(dir, index_col=[0])
+    dfs =dfs.append(df).reset_index(drop=True)
+  new_name = os.path.join(merge_dir, name + ".csv")
+  dfs.to_csv(new_name)
+
+  return new_name
+
+
 
 if __name__ == "__main__":
  lst = merge_data("random")
+ lst2 = merge_data("test")
  df = pd.read_csv(lst)
- print(len(df))
+ dfs = complete_file(["test","random"],"test0")
+ print(len(dfs))
 
 

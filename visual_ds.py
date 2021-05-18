@@ -16,8 +16,7 @@ app = dash.Dash(__name__)
 dfs = pd.DataFrame()
 for i in gestures:
     df = pd.read_csv(merge_dir + "/" +i + '.csv', index_col = [0])
-    df["activity"] = i
-    df["err_aX"] = df["aX"] - df["aX"].std() # margin_error
+    df["err_aX"] = df["aX"] - df["aX"].std() # difference to std
     dfs = dfs.append(df)
 
 #num = dfs["activity"].value_counts()
