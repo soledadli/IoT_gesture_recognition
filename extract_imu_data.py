@@ -9,8 +9,8 @@ baud = 115200
 time_out = 30
 
 arduino = serial.Serial(port, baud, time_out)
-main_dir = '/Users/soledqdli/Desktop/Internship/movuino_data/test_data'
-clean_dir = '/Users/soledqdli/Desktop/Internship/movuino_data/clean_data/test_data'
+main_dir = 'test_data/'
+clean_dir = 'clean_test_data/'
 
 # Data Logging from the Serial Monitor of the Central
 def log_imu_data( ):

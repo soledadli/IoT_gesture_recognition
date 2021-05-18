@@ -4,8 +4,8 @@ import os.path
 
 GESTURES = ["random0","random5","test0","test1"] #different names
 MAIN_GESTURE= ["random","test"] # e.g walk
-clean_dir = '/Users/soledqdli/Desktop/Internship/movuino_data/clean_data/clean_test_data'
-merge_dir = '/Users/soledqdli/Desktop/Internship/movuino_data/congregate_data/complete'
+clean_dir = 'clean_test_data/'
+merge_dir = 'merge_data/'
 gesture = "r"
 file_holder = []
 

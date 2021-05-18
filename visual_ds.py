@@ -9,7 +9,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, State
 
-merge_dir = '/Users/soledqdli/Desktop/Internship/movuino_data/congregate_data/complete'
+merge_dir = 'merge_data/'
 gestures = ["random","test"]
 app = dash.Dash(__name__)
 
