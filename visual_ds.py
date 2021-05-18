@@ -10,23 +10,22 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 
 merge_dir = 'merge_data/'
-gestures = ["random","test"]
+scaled_dir = "merge_data/scaled_data/"
+fileName = "test0"
+
 app = dash.Dash(__name__)
 
-dfs = pd.DataFrame()
-for i in gestures:
-    df = pd.read_csv(merge_dir + "/" +i + '.csv', index_col = [0])
-    df["err_aX"] = df["aX"] - df["aX"].std() # difference to std
-    dfs = dfs.append(df)
+df = pd.read_csv(merge_dir + fileName +".csv")
+df["err_aX"] = df["aX"] - df["aX"].std() # difference to std
 
-#num = dfs["activity"].value_counts()
-
+# dfs = pd.read_csv(scaled_dir + fileName +".csv")
+#num = df["activity"].value_counts()
 
 
 
 
 linechart = px.line(
-    data_frame = dfs,
+    data_frame = df,
     x = 'time',
     y = ["aX","aY","aZ","gX","gY",],
     facet_col = 'activity', # Separate the line plots according to the activities
@@ -37,7 +36,7 @@ linechart = px.line(
 
 
     #hover_name ="aX" # values appear in bold in hover tooltip information
-    # hover_data = dfs["activity"].value_counts() # values appear as extra data in the hover tooltip
+    # hover_data = df["activity"].value_counts() # values appear as extra data in the hover tooltip
 )
 
 linechart.show()
