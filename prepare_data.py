@@ -1,13 +1,17 @@
 import pandas as pd
 import numpy as np
-import tensorflow as tf
-from tensorflow import keras
 import seaborn as sns
 from pylab import rcParams
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import RobustScaler
+from scipy import stats
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
+
 
 scaled_dir = "merge_data/scaled_data/"
+TIME_STEPS = 5
+STEP = 1
 
 # Scaling the data to emphasize difference
 def scale_data(df, file_name):
@@ -18,7 +22,37 @@ def scale_data(df, file_name):
     df.to_csv(scaled_dir + "scaled_"+ file_name + ".csv")
     return df
 
+def segement_data(X, y, time_steps=5, step=1):
+    Xs, ys = [], []
+    for i in range(0, len(X) - time_steps, step):
+        v = X.iloc[i:(i + time_steps)].values
+        labels = y.iloc[i: i + time_steps]
+        Xs.append(v)
+        ys.append(stats.mode(labels)[0][0])
+    return np.array(Xs), np.array(ys).reshape(-1, 1)
+
+def split_data(X,y):
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=4, stratify=y)
+    return X_train, X_test, y_train, y_test
+
+def encode_data(y_train, y_test):
+    enc = OneHotEncoder(handle_unknown='ignore', sparse=False)
+    enc = enc.fit(y_train)
+    y_train = enc.transform(y_train)
+    y_test = enc.transform(y_test)
+    return y_train, y_test,enc
+
+
 if __name__ == "__main__":
     df= pd.read_csv("merge_data/test0.csv", index_col=[0])
     dfs =scale_data(df, "test0")
-    print(dfs.head())
+    X, y = segement_data(
+        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]],
+        dfs.activity,
+        TIME_STEPS,
+        STEP
+    )
+    X_train, X_test, y_train, y_test = split_data(X,y)
+    y_train, y_test = encode_data(y_train, y_test)
+    print(X_train.shape, y_train.shape) # y_train is the encoded label, in form with [0,1]
+
