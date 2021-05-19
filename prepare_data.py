@@ -22,17 +22,17 @@ def scale_data(df, file_name):
     df.to_csv(scaled_dir + "scaled_"+ file_name + ".csv")
     return df
 
-def segement_data(X, y, time_steps=5, step=1):
+def segement_data(feature, label, time_steps=5, step=1):
     Xs, ys = [], []
-    for i in range(0, len(X) - time_steps, step):
-        v = X.iloc[i:(i + time_steps)].values
-        labels = y.iloc[i: i + time_steps]
+    for i in range(0, len(feature) - time_steps, step):
+        v = feature.iloc[i:(i + time_steps)].values
+        labels = label.iloc[i: i + time_steps]
         Xs.append(v)
         ys.append(stats.mode(labels)[0][0])
     return np.array(Xs), np.array(ys).reshape(-1, 1)
 
-def split_data(X,y):
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=4, stratify=y)
+def split_data(feature,label):
+    X_train, X_test, y_train, y_test = train_test_split(feature, label, test_size=0.2, random_state=4, stratify=label)
     return X_train, X_test, y_train, y_test
 
 def encode_data(y_train, y_test):
@@ -41,7 +41,6 @@ def encode_data(y_train, y_test):
     y_train = enc.transform(y_train)
     y_test = enc.transform(y_test)
     return y_train, y_test,enc
-
 
 if __name__ == "__main__":
     df= pd.read_csv("merge_data/test0.csv", index_col=[0])
