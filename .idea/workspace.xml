@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80e8929b-51e7-499c-abd7-4831f1814e5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/evaluate_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/merge_imudata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/standard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visual_dash.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tune_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/congregate_imudata.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/model/saved_model.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/model/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/model/variables/variables.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepare_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_ds.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621367648479</updated>
       <workItem from="1621367652398" duration="2295000" />
-      <workItem from="1621424047469" duration="11017000" />
+      <workItem from="1621424047469" duration="13435000" />
     </task>
     <servers />
   </component>
@@ -127,6 +118,11 @@
           <url>file://$PROJECT_DIR$/train_model.py</url>
           <line>35</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../ref_activity-classification-with-lstms-Keras/model_evaluate_BO.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

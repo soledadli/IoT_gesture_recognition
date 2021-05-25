@@ -1,0 +1,44 @@
+Initialise the Bluefruit nRF52 module
+Connected
+Discovering Error Service ... Error service not found
+Connected
+Discovering Error Service ... TempCharacteristic characteristic found
+Ready to receive TempCharacteristic characteristic data
+PossCharacteristic characteristic found
+Ready to receive PossCharacteristic characteristic data
+flap: 0.97
+walk: 0.03
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00
+flap: 0.98
+walk: 0.02
+sit: 0.00

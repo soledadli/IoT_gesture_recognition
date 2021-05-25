@@ -4,11 +4,13 @@ import time
 import pandas as pd
 
 ser = serial.Serial()
-port = "/dev/cu.usbmodem14101"
+port = "/dev/cu.usbmodem14301"
 baud = 115200
-time_out = 30
+time_out = 2
+byte=8
 
-arduino = serial.Serial(port, baud, time_out)
+# Added the bytesize & parity parameter for receiving model predictions data
+arduino = serial.Serial(port, baud, serial.EIGHTBITS, serial.PARITY_NONE ,time_out)
 main_dir = 'test_data/'
 clean_dir = 'clean_test_data/'
 

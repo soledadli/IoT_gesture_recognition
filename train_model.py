@@ -11,18 +11,18 @@ from sklearn.utils import shuffle
 model_dir = 'model/'
 
 
-def train_lstm_model(X_train,y_train):
+def train_lstm_model(X_train,y_train, unit=128, dropout_rate = 0.5):
     model = keras.Sequential()
     model.add(
         keras.layers.Bidirectional(
             keras.layers.LSTM(
-                units=128,
+                units=unit,
                 input_shape=[X_train.shape[1]]
             )
         )
     )
-    model.add(keras.layers.Dropout(rate=0.5))
-    model.add(keras.layers.Dense(units=128, activation='relu'))
+    model.add(keras.layers.Dropout(rate=dropout_rate))
+    model.add(keras.layers.Dense(units=unit, activation='relu'))
     model.add(keras.layers.Dense(y_train.shape[1], activation='softmax'))
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['acc'])
 
