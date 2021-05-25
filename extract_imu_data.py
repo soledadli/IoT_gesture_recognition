@@ -4,6 +4,7 @@ import time
 import pandas as pd
 
 ser = serial.Serial()
+# use search_port_name.py to get right names for the usb port
 port = "/dev/cu.usbmodem14301"
 baud = 115200
 time_out = 2
@@ -36,7 +37,7 @@ def log_imu_data( ):
             print("Interruption")
             break
 
-    return file_name, completeName
+    return fullname, completeName
 
 # Clean the data
 def clean_gyrodata(df):

@@ -10,21 +10,22 @@ import serial
 
 
 ser = serial.Serial()
-port = "/dev/cu.usbmodem14101"
+port = "/dev/cu.usbmodem14301"
 baud = 115200
 time_out = 30
 
 #arduino = None
-arduino = serial.Serial(port, baud, time_out)
+arduino = serial.Serial(port, baud, serial.EIGHTBITS, serial.PARITY_NONE ,serial.STOPBITS_ONE, time_out)
 
 #load Model
-model = tf.keras.models.load_model('/model/saved_model.pb')
+# model = tf.keras.models.load_model('/model/saved_model.pb')
 
 
 # Get Data from imu sensor
 
 def get_imu_data():
-    '''
+    global arduino
+    lst = []
     if not arduino:
         # open serial port
         arduino = serial.Serial(port, baud, time_out)
@@ -33,24 +34,30 @@ def get_imu_data():
         # Flush input
         time.sleep(3)
         arduino.readline()
-        '''
-    data = str(arduino.readline(), 'utf-8')
-    print(data)
-    return data
-'''
-    # Poll the serial port
-    line = str(serialport.readline(), 'utf-8')
-    if not line:
-        return None
 
-    vals = line.replace("Uni:", "").strip().split(',')
+    samples = 30
+    line = 0
+    # Take specific samples from Microcontrollers
+    while line < samples:
+        try:
+            data = str(arduino.readline(), 'utf-8')
+            line += 1
+            for line in range(samples):
+                if data.startswith("t"):
+                    vals = data.strip().split(":")
+                    lst = [vals[index] for index in [1, 3, 5, 7]]
 
-    if len(vals) != 7:
-        return None
-    try:
-        vals = [float(i) for i in vals]
-    except ValueError:
-        return ValueError
+                elif data.startswith("g"):
+                    vals2 = data.strip().split(":")
+                    lst2 = lst + [vals2[index] for index in [1, 3, 5]]
 
-    return vals
-'''
+                vals = [float(i) for i in lst2]
+            print(vals)
+            print(lst2)
+            return vals
+
+        except:
+            print("Interruption")
+            break
+
+
