@@ -1,12 +1,11 @@
 import numpy as np
 import pandas as pd
-import datetime
-import re
 import os, os.path
 import time
-import random
 import tensorflow as tf
 import serial
+from prepare_data import *
+
 
 
 ser = serial.Serial()
@@ -14,15 +13,11 @@ port = "/dev/cu.usbmodem14301"
 baud = 115200
 time_out = 30
 
-#arduino = None
-arduino = serial.Serial(port, baud, serial.EIGHTBITS, serial.PARITY_NONE ,serial.STOPBITS_ONE, time_out)
-
-#load Model
-# model = tf.keras.models.load_model('/model/saved_model.pb')
+# arduino = None
+# arduino = serial.Serial(port, baud, serial.EIGHTBITS, serial.PARITY_NONE ,serial.STOPBITS_ONE, time_out)
 
 
 # Get Data from imu sensor
-
 def get_imu_data():
     global arduino
     lst = []
@@ -60,4 +55,21 @@ def get_imu_data():
             print("Interruption")
             break
 
+def segement_predict_data(feature, time_steps=5, step=1):
+    Xs = []
+    for i in range(0, len(feature) - time_steps, step):
+        v = feature.iloc[i:(i + time_steps)].values
+        Xs.append(v)
+    return np.array(Xs)
+
+if __name__ == "__main__":
+    # load Model
+    model = tf.keras.models.load_model('models/lstm_model.h5')
+    dfs = pd.read_csv("clean_data/random5.csv")
+    X = segement_predict_data(
+        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], 5, 1)
+
+    predictions = model.predict(X)
+    category = np.argmax(predictions, axis=1)
+    print("categorization: ", category)
 

@@ -8,7 +8,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.utils import shuffle
 
 
-model_dir = 'model/'
+model_dir = 'models/'
 
 
 def train_lstm_model(X_train,y_train, unit=128, dropout_rate = 0.5):
@@ -41,12 +41,11 @@ if __name__ == "__main__":
         epochs=10,
         batch_size=45,
         validation_split=0.2)
+    model.save('models/lstm_model.h5')
+
     score = model.evaluate(X_test, y_test, verbose=0)
     print(f'Test loss: {score[0]} / Test accuracy: {score[1]}')
     predictions = model.predict(X_test)
     category = np.argmax(predictions, axis=1)
     print("categorization: ", category)
-
-
-        
 

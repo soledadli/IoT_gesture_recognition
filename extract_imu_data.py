@@ -13,7 +13,7 @@ byte=8
 # Added the bytesize & parity parameter for receiving model predictions data
 arduino = serial.Serial(port, baud, serial.EIGHTBITS, serial.PARITY_NONE ,time_out)
 main_dir = 'test_data/'
-clean_dir = 'clean_test_data/'
+clean_dir = 'clean_data/'
 
 # Data Logging from the Serial Monitor of the Central
 def log_imu_data( ):
