@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 
 
-scaled_dir = "merge_data/scaled_data/"
+scaled_dir = "data_pipeline/merge_data/scaled_data/"
 TIME_STEPS = 5
 STEP = 1
 
