@@ -51,6 +51,7 @@ if __name__ == "__main__":
         TIME_STEPS,
         STEP
     )
+
     X_train, X_test, y_train, y_test = split_data(X,y)
     y_train, y_test = encode_data(y_train, y_test)
     print(X_train.shape, y_train.shape) # y_train is the encoded label, in form with [0,1]

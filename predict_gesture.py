@@ -7,7 +7,7 @@ import serial
 from prepare_data import *
 import schedule
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 ser = serial.Serial()
@@ -15,8 +15,7 @@ port = "/dev/cu.usbmodem14301"
 baud = 115200
 time_out = 30
 
-# arduino = None
-
+test_dir = "data_pipeline/test_data"
 
 
 # Get Data from imu sensor
@@ -72,25 +71,30 @@ def segement_predict_data(feature, time_steps=5, step=2):
 
 
 @tf.autograph.experimental.do_not_convert
-def predict_motion(model, filename):
+def predict_motion(model, test_dir):
     predict_df = pd.DataFrame()
     # read files should be predicted
-    df = pd.read_csv("data_pipeline/clean_data/" +  filename + ".csv")
-    # scale the prediction file data
-    dfs = scale_data(df, filename)
-    # preprocessing the data for model prediction
-    X = segement_predict_data(
-        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], 5, 1)
 
-    hour = datetime.now().strftime("%H:%M:%S")
+    for path, currentDirectory, files in os.walk(test_dir):
+        for i in files:
+            filename = os.path.join(path,i)
+            df = pd.read_csv(filename,  index_col=[0])
+          #  df = pd.read_csv("data_pipeline/clean_data/" +  filename + ".csv")
+            # scale the prediction file data
+            dfs = scale_data(df, i)
+            # preprocessing the data for model prediction
+            X = segement_predict_data(
+                dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], 5, 1)
+            hour = datetime.now().strftime("%H:%M:%S")
+            # predict the model
+            predictions = model.predict(X)
+            # identifying predicted motions
+            category = np.argmax(predictions, axis=1)
+            print(i, category)
+            for i in category:
+                # appending new predictions to the predict_file
+                predict_df = predict_df.append({"time" : hour , 'predictions':i , "name": i}, ignore_index=True)
     date = datetime.now().strftime("%Y-%m-%d")
-    # predict the model
-    predictions = model.predict(X)
-    # identifying predicted motions
-    category = np.argmax(predictions, axis=1)
-    for i in category:
-        # appending new predictions to the predict_file
-        predict_df = predict_df.append({"time" : hour , 'predictions':i }, ignore_index=True)
     # create a new df of predictions per day
     predict_df.to_csv('predictions/' + date + "-predictions.csv", mode='a',header= False)
     return category
@@ -100,8 +104,11 @@ if __name__ == "__main__":
   # load Model
     model = tf.keras.models.load_model('models/lstm_model.h5')
   #  tp = pd.DataFrame()
-    schedule.every(5).minutes.do(lambda: predict_motion(model,"random5"))
+    schedule.every(10).seconds.until(timedelta(seconds=30)).do(lambda: predict_motion(model, test_dir))
 
-    while 1:
-        schedule.run_pending()
-        time.sleep(2)
+    while True:
+        try:
+            schedule.run_pending()
+            time.sleep(5)
+        except:
+            schedule.clear()
