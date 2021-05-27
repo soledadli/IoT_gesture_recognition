@@ -66,6 +66,7 @@ def clean_imudata(df):
     new_df = pd.concat([file,gyro], axis = 1).iloc[:-1,:].dropna()
     return new_df
 
+
 if __name__ == "__main__":
     file_name, completeName = log_imu_data( )
     df = pd.read_csv(completeName)
@@ -73,4 +74,4 @@ if __name__ == "__main__":
     cleanName = os.path.join(clean_dir, file_name)
     df.to_csv(cleanName)
     print((f"Lengh {len(df)} for the file '{file_name}'."))
-    print(df.head())
+

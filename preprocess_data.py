@@ -40,10 +40,11 @@ def encode_data(y_train, y_test):
     enc = enc.fit(y_train)
     y_train = enc.transform(y_train)
     y_test = enc.transform(y_test)
-    return y_train, y_test,enc
+    print(enc.categories_)
+    return y_train, y_test
 
 if __name__ == "__main__":
-    df= pd.read_csv("merge_data/test0.csv", index_col=[0])
+    df= pd.read_csv("data_pipeline/merge_data/test0.csv", index_col=[0])
     dfs =scale_data(df, "test0")
     X, y = segement_data(
         dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]],
@@ -54,5 +55,6 @@ if __name__ == "__main__":
 
     X_train, X_test, y_train, y_test = split_data(X,y)
     y_train, y_test = encode_data(y_train, y_test)
-    print(X_train.shape, y_train.shape) # y_train is the encoded label, in form with [0,1]
+
+   # print(X_train.shape, y_train.shape) # y_train is the encoded label, in form with [0,1]
 

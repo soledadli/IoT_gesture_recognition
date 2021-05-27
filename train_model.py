@@ -11,7 +11,7 @@ from sklearn.utils import shuffle
 model_dir = 'models/'
 
 
-def train_lstm_model(X_train,y_train, unit=128, dropout_rate = 0.5):
+def train_lstm_model(X_train, y_train, unit=128, dropout_rate=0.5):
     model = keras.Sequential()
     model.add(
         keras.layers.Bidirectional(
@@ -32,10 +32,10 @@ def train_lstm_model(X_train,y_train, unit=128, dropout_rate = 0.5):
 if __name__ == "__main__":
     dfs = pd.read_csv("merge_data/scaled_data/scaled_test0.csv")
     X, y = segement_data(
-        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], dfs.activity,5, 1)
+        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], dfs.activity, 5, 1)
     X_train, X_test, y_train, y_test = split_data(X, y)
     y_train, y_test, enc = encode_data(y_train, y_test)
-    model = train_lstm_model(X_train,y_train)
+    model = train_lstm_model(X_train, y_train)
     history = model.fit(
         X_train, y_train,
         epochs=10,
@@ -48,4 +48,3 @@ if __name__ == "__main__":
     predictions = model.predict(X_test)
     category = np.argmax(predictions, axis=1)
     print("categorization: ", category)
-
