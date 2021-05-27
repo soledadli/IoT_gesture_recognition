@@ -2,38 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80e8929b-51e7-499c-abd7-4831f1814e5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_pipeline/ raw_data/.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/ raw_data/random5.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/ raw_data/test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/ raw_data/test0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/ raw_data/test09.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/clean_data/random0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/clean_data/random5.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/clean_data/test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/clean_data/test0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/clean_data/test1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/merge_data/random.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/merge_data/scaled_data/scaled_random5.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/merge_data/scaled_data/scaled_test0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/merge_data/test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_pipeline/merge_data/test0.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_data/random0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_data/random5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_data/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_data/test0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_data/test1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_data/random.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_data/scaled_data/scaled_test0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_data/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_data/test0.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/predict_gesture.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict_gesture.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepare_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/random5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/test0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/test09.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +70,8 @@
       <updated>1621367648479</updated>
       <workItem from="1621367652398" duration="2295000" />
       <workItem from="1621424047469" duration="13435000" />
-      <workItem from="1622016296677" duration="2568000" />
+      <workItem from="1622016296677" duration="6280000" />
+      <workItem from="1622100274227" duration="1837000" />
     </task>
     <servers />
   </component>

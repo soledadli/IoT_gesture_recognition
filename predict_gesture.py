@@ -7,6 +7,7 @@ import serial
 from prepare_data import *
 import schedule
 import time
+from datetime import datetime
 
 
 ser = serial.Serial()
@@ -56,29 +57,47 @@ def get_imu_data():
             print("Interruption")
             break
 
-def segement_predict_data(feature, time_steps=5, step=1):
+def segement_predict_data(feature, time_steps=5, step=2):
+    '''
+    (row, column, depth): row * column should be the length of dataframe
+    to include all the data points in the dataframe
+    '''
     Xs = []
     for i in range(0, len(feature) - time_steps, step):
         v = feature.iloc[i:(i + time_steps)].values
+        # print(feature.iloc[i:(i + time_steps)]) # to test the best segemented sizes
         Xs.append(v)
+        print(np.shape(Xs))
     return np.array(Xs)
 
+
 @tf.autograph.experimental.do_not_convert
-def predict_motion(model, filename):
+def predict_motion(model, filename, predict_file):
     df = pd.read_csv("data_pipeline/clean_data/" +  filename + ".csv")
     dfs = scale_data(df, filename)
     X = segement_predict_data(
         dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], 5, 1)
     predictions = model.predict(X)
     category = np.argmax(predictions, axis=1)
-    print("categorization: ", category)
+    hour = datetime.now()
+  #  df['time'] = hour
+    predict_file = predict_file.append(category.tolist(), ignore_index=True)
+    predict_file.to_csv('test.csv')
+
+    print("categorization: ", category, "time: ", hour)
+
+
+    return category
 
 
 if __name__ == "__main__":
   #  vals = get_imu_data()
   # load Model
     model = tf.keras.models.load_model('models/lstm_model.h5')
-    schedule.every(10).seconds.do(lambda: predict_motion(model,"random5"))
+    tp = pd.DataFrame()
+    schedule.every(10).seconds.do(lambda: predict_motion(model,"random5", tp))
+
+
 
     while 1:
         schedule.run_pending()
