@@ -72,32 +72,35 @@ def segement_predict_data(feature, time_steps=5, step=2):
 
 
 @tf.autograph.experimental.do_not_convert
-def predict_motion(model, filename, predict_file):
+def predict_motion(model, filename):
+    predict_df = pd.DataFrame()
+    # read files should be predicted
     df = pd.read_csv("data_pipeline/clean_data/" +  filename + ".csv")
+    # scale the prediction file data
     dfs = scale_data(df, filename)
+    # preprocessing the data for model prediction
     X = segement_predict_data(
         dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], 5, 1)
+
+    hour = datetime.now().strftime("%H:%M:%S")
+    date = datetime.now().strftime("%Y-%m-%d")
+    # predict the model
     predictions = model.predict(X)
+    # identifying predicted motions
     category = np.argmax(predictions, axis=1)
-    hour = datetime.now()
-  #  df['time'] = hour
-    predict_file = predict_file.append(category.tolist(), ignore_index=True)
-    predict_file.to_csv('test.csv')
-
-    print("categorization: ", category, "time: ", hour)
-
-
+    for i in category:
+        # appending new predictions to the predict_file
+        predict_df = predict_df.append({"time" : hour , 'predictions':i }, ignore_index=True)
+    # create a new df of predictions per day
+    predict_df.to_csv('predictions/' + date + "-predictions.csv", mode='a',header= False)
     return category
-
 
 if __name__ == "__main__":
   #  vals = get_imu_data()
   # load Model
     model = tf.keras.models.load_model('models/lstm_model.h5')
-    tp = pd.DataFrame()
-    schedule.every(10).seconds.do(lambda: predict_motion(model,"random5", tp))
-
-
+  #  tp = pd.DataFrame()
+    schedule.every(5).minutes.do(lambda: predict_motion(model,"random5"))
 
     while 1:
         schedule.run_pending()
