@@ -12,8 +12,8 @@ byte=8
 
 # Added the bytesize & parity parameter for receiving model predictions data
 arduino = serial.Serial(port, baud, serial.EIGHTBITS, serial.PARITY_NONE ,time_out)
-main_dir = 'test_data/'
-clean_dir = 'clean_data/'
+main_dir = 'data_pipeline/raw_data/'
+clean_dir = 'data_pipeline/test_data/'
 
 # Data Logging from the Serial Monitor of the Central
 def log_imu_data( ):
@@ -57,9 +57,10 @@ def clean_imudata(df):
     # Separate Gyro data and Accel data out
     file = df.drop(df[df[col].apply(lambda x: x.startswith('g'))].index).reset_index(drop=True)
     # Split data info into different columns
-    file = file[col].str.split(expand=True).rename(columns={1:"time",2:"aX",3:"aY",4:"aZ"})
+    file = file[col].str.split(expand=True).rename(columns={0:"time",1:"aX",2:"aY",3:"aZ"})
+
     # Clear unnecessary characters
-    file = file.replace([":accelX:",":accelY:",":accelZ:"],"",regex= True).iloc[:,1:]
+    file = file.replace(["time:",":accelX:",":accelY:",":accelZ:"],"",regex= True).iloc[:,1:]
     # Clean gyro data
     gyro = clean_gyrodata(df)
     # Concat the Accel & Gyro Data back into one file
