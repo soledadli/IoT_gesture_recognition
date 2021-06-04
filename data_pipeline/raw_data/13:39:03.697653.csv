@@ -1,0 +1,100 @@
+Initialise the Bluefruit nRF52 module
+Connected
+time:41216:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.49:GyroY: -0.55:gyroZ: -1.28
+
+time:41324:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.55:GyroY: -0.61:gyroZ: -1.34
+
+time:41431:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.43:GyroY: -0.43:gyroZ: -1.28
+
+time:41539:accelX: 0.01:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.31:GyroY: -0.55:gyroZ: -1.04
+
+time:41646:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.43:GyroY: -0.73:gyroZ: -1.34
+
+time:41753:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.49:GyroY: -0.67:gyroZ: -1.10
+
+time:41861:accelX: 0.01:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.55:GyroY: -0.49:gyroZ: -1.10
+
+time:41968:accelX: 0.01:accelY: -0.04:accelZ: -1.00
+gyrolX: 0.55:GyroY: -0.49:gyroZ: -0.98
+
+time:42076:accelX: 0.02:accelY: -0.06:accelZ: -1.00
+gyrolX: 0.37:GyroY: -0.67:gyroZ: -1.28
+
+time:42183:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.55:GyroY: -0.49:gyroZ: -1.10
+
+time:42291:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.37:GyroY: -0.43:gyroZ: -1.22
+
+time:42398:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.37:GyroY: -0.55:gyroZ: -1.10
+
+time:42505:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.37:GyroY: -0.61:gyroZ: -1.34
+
+time:42614:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.67:GyroY: -0.49:gyroZ: -1.34
+
+time:42721:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.49:GyroY: -0.37:gyroZ: -1.22
+
+time:42829:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.24:GyroY: -0.55:gyroZ: -1.34
+
+time:42936:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.43:GyroY: -0.73:gyroZ: -1.16
+
+time:43043:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.43:GyroY: -0.79:gyroZ: -1.22
+
+time:43151:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.37:GyroY: -0.67:gyroZ: -1.40
+
+time:43258:accelX: 0.02:accelY: -0.04:accelZ: -0.99
+gyrolX: 0.73:GyroY: -0.61:gyroZ: -1.28
+
+time:43366:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.43:GyroY: -0.67:gyroZ: -1.16
+
+time:43473:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.31:GyroY: -0.43:gyroZ: -1.04
+
+time:43581:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.49:GyroY: -0.55:gyroZ: -1.22
+
+time:43688:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.43:GyroY: -0.43:gyroZ: -1.22
+
+time:43795:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.18:GyroY: -0.37:gyroZ: -1.28
+
+time:43904:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.24:GyroY: -0.79:gyroZ: -1.04
+
+time:44011:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.31:GyroY: -0.98:gyroZ: -1.16
+
+time:44119:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.49:GyroY: -0.67:gyroZ: -1.10
+
+time:44226:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.24:GyroY: -0.43:gyroZ: -1.46
+
+time:44333:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.37:GyroY: -0.55:gyroZ: -1.16
+
+time:44441:accelX: 0.02:accelY: -0.05:accelZ: -0.99
+gyrolX: 0.55:GyroY: -0.85:gyroZ: -1.34
+
+time:44548:accelX: 0.02:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.49:GyroY: -0.73:gyroZ: -1.28
+
+time:44656:accelX: 0.01:accelY: -0.05:accelZ: -1.00
+gyrolX: 0.24:GyroY: -0.55:gyroZ: -1.40
