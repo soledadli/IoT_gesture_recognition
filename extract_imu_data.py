@@ -22,11 +22,12 @@ def log_imu_data( ):
     fullname = name + '.csv'
     # Put the file in one specific directory
     completeName = os.path.join(main_dir, fullname)
-    # 44 is like one minute sample
-    samples = 44
+    # 44 is like one minute sample // 2765 5 min sample
+    samples = 2765 # 5 min data
     line = 0
     # Take specific samples from Microcontrollers
-    while line < samples:
+    while True:
+   # while line < samples:
         try:
             with open(completeName, 'a') as f:
                 data = str(arduino.readline(), 'utf-8')
@@ -71,8 +72,8 @@ def clean_imudata(df):
 if __name__ == "__main__":
     file_name, completeName = log_imu_data( )
     df = pd.read_csv(completeName)
-    df = clean_imudata(df)
-    cleanName = os.path.join(clean_dir, file_name)
-    df.to_csv(cleanName)
+   # df = clean_imudata(df)
+   # cleanName = os.path.join(clean_dir, file_name)
+   # df.to_csv(cleanName)
     print((f"Lengh {len(df)} for the file '{file_name}'."))
 

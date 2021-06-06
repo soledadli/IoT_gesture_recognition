@@ -93,17 +93,19 @@ def organize_imu_data():
     df = clean_imudata(df)
     cleanName = os.path.join(clean_dir, file_name)
     df.to_csv(cleanName)
+    print('File Saved')
     return df
+
 
 @tf.autograph.experimental.do_not_convert
 def predict_motion(model, test_dir, motion:list):
-    predict_df = pd.DataFrame(columns= ["name","time","hour","predictions"])
+    predict_df = pd.DataFrame(columns= ["datafile","recorded_time","hour_min","predictions", "motion"])
     # read the latest imu data file to predict the model
     list_of_files = glob.glob(test_dir+'/*.csv')
     latest_file = max(list_of_files, key=os.path.getctime)
     latest_file_name = latest_file.split("/")[2]
     latest_file_time = latest_file_name.split('.csv')[0]
-    latest_file_hour = latest_file_time.split(":")[0]
+    latest_file_hour = ":".join(latest_file_time.split(":")[0:2])
     df = pd.read_csv(latest_file, index_col=[0])
     dfs = scale_data(df, "test")
     # preprocessing the data for model prediction
@@ -115,7 +117,7 @@ def predict_motion(model, test_dir, motion:list):
     category = np.argmax(predictions, axis=1)
     for i in category:
         # appending new predictions to the predict_file
-        predict_df = predict_df.append({"name": latest_file_name, "time" : latest_file_time, "hour": latest_file_hour,
+        predict_df = predict_df.append({"datafile": latest_file_name, "recorded_time" : latest_file_time, "hour_min": latest_file_hour,
                                         'predictions': i, "motion" : motion[i]}, ignore_index=True)
     date = datetime.now().strftime("%Y-%m-%d")
     prediction_file_name = 'predictions/' + date + "-predictions.csv"
@@ -131,8 +133,8 @@ def predict_motion(model, test_dir, motion:list):
 
 if __name__ == "__main__":
   # load Model
-    model = tf.keras.models.load_model('models/lstm_model.h5')
-    schedule.every(1).minute.do(lambda: predict_motion(model, test_dir, ["test1","test2"]))
+    model = tf.keras.models.load_model('models/lstm_model_2.h5')
+    schedule.every(5).minutes.do(lambda: predict_motion(model, test_dir, ["walk","flap","still"]))
     while True:
         organize_imu_data()
         schedule.run_pending()

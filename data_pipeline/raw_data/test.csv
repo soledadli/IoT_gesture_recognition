@@ -1,88 +1,371 @@
- timestamp: 21461:accelX: 0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.85:GyroY: -0.49:gyroZ: -1.53
- timestamp: 21574:accelX: 0.00:accelY: -0.06:accelZ: -1.01
-gyrolX: 0.61:GyroY: -0.49:gyroZ: -1.28
- timestamp: 21686:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.67:GyroY: -0.61:gyroZ: -1.16
- timestamp: 21798:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.55:GyroY: -0.73:gyroZ: -1.28
- timestamp: 21911:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.61:GyroY: -0.55:gyroZ: -1.28
- timestamp: 22024:accelX: -0.00:accelY: -0.06:accelZ: -0.99
-gyrolX: 0.67:GyroY: -0.73:gyroZ: -1.34
- timestamp: 22136:accelX: 0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.79:GyroY: -0.67:gyroZ: -1.16
- timestamp: 22249:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.55:GyroY: -0.67:gyroZ: -1.40
- timestamp: 22361:accelX: 0.00:accelY: -0.06:accelZ: -1.01
-gyrolX: 0.55:GyroY: -0.79:gyroZ: -1.53
- timestamp: 22473:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.55:GyroY: -0.73:gyroZ: -1.28
- timestamp: 22586:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.55:GyroY: -0.79:gyroZ: -1.34
- timestamp: 22699:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.55:GyroY: -0.61:gyroZ: -1.65
- timestamp: 22811:accelX: 0.00:accelY: -0.06:accelZ: -0.99
-gyrolX: 0.55:GyroY: -0.55:gyroZ: -1.28
- timestamp: 22923:accelX: -0.01:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.73:GyroY: -0.61:gyroZ: -1.28
- timestamp: 23037:accelX: -0.01:accelY: -0.06:accelZ: -0.99
-gyrolX: 0.61:GyroY: -1.16:gyroZ: -1.34
- timestamp: 23149:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.43:GyroY: -0.49:gyroZ: -1.53
- timestamp: 23261:accelX: -0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.49:GyroY: -0.49:gyroZ: -1.59
- timestamp: 23374:accelX: 0.01:accelY: -0.05:accelZ: -0.98
-gyrolX: 1.04:GyroY: -0.98:gyroZ: -1.53
- timestamp: 23486:accelX: 0.00:accelY: -0.06:accelZ: -1.00
-gyrolX: 0.61:GyroY: -0.49:gyroZ: -1.59
- timestamp: 23599:accelX: -0.00:accelY: -0.06:accelZ: -0.98
-gyrolX: 0.79:GyroY: -0.73:gyroZ: -1.40
- timestamp: 23711:accelX: -0.00:accelY: -0.06:accelZ: -1.01
-gyrolX: 0.49:GyroY: -0.18:gyroZ: -1.22
- timestamp: 23824:accelX: -0.01:accelY: -0.06:accelZ: -0.99
-gyrolX: 0.37:GyroY: -0.98:gyroZ: -1.46
 Connected
- timestamp: 652:accelX: 0.48:accelY: -0.15:accelZ: -1.41
-gyrolX: 0.06:GyroY: 58.23:gyroZ: -3.23
- timestamp: 767:accelX: -0.02:accelY: -0.03:accelZ: -1.03
-gyrolX: -0.98:GyroY: -2.99:gyroZ: -1.22
- timestamp: 880:accelX: -0.02:accelY: -0.02:accelZ: -1.00
-gyrolX: 0.31:GyroY: -0.85:gyroZ: -1.34
- timestamp: 993:accelX: -0.02:accelY: -0.03:accelZ: -1.01
-gyrolX: -0.98:GyroY: 2.56:gyroZ: -1.28
- timestamp: 1105:accelX: -0.02:accelY: -0.03:accelZ: -0.99
-gyrolX: 0.37:GyroY: -0.92:gyroZ: -1.28
- timestamp: 1217:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.43:GyroY: -0.73:gyroZ: -1.16
- timestamp: 1330:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.49:GyroY: -0.55:gyroZ: -1.34
- timestamp: 1443:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.79:GyroY: -0.55:gyroZ: -1.22
- timestamp: 1555:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.67:GyroY: -0.61:gyroZ: -1.40
- timestamp: 1667:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.73:GyroY: -0.31:gyroZ: -1.40
- timestamp: 1780:accelX: -0.01:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.43:GyroY: -0.67:gyroZ: -1.34
- timestamp: 1892:accelX: -0.01:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.37:GyroY: -0.61:gyroZ: -1.40
- timestamp: 2005:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.79:GyroY: -0.61:gyroZ: -1.34
- timestamp: 2118:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: -0.06:GyroY: -1.83:gyroZ: -1.46
- timestamp: 2230:accelX: -0.02:accelY: -0.04:accelZ: -1.00
-gyrolX: 1.34:GyroY: 0.43:gyroZ: -1.22
- timestamp: 2342:accelX: -0.00:accelY: -0.04:accelZ: -0.99
-gyrolX: 0.06:GyroY: -0.18:gyroZ: 1.28
- timestamp: 2456:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: -0.37:GyroY: 0.61:gyroZ: -1.46
- timestamp: 2568:accelX: -0.02:accelY: -0.04:accelZ: -0.99
-gyrolX: 0.00:GyroY: -0.43:gyroZ: -1.40
- timestamp: 2680:accelX: -0.02:accelY: -0.03:accelZ: -0.99
-gyrolX: 0.79:GyroY: -0.55:gyroZ: -1.22
- timestamp: 2792:accelX: -0.02:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.73:GyroY: -0.55:gyroZ: -1.34
- timestamp: 2905:accelX: -0.01:accelY: -0.03:accelZ: -1.00
-gyrolX: 0.73:GyroY: -0.49:gyroZ: -1.22
- timestamp: 3017:accelX: -0.02:accelY: -0.03:accelZ: -1.01
+time:657:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+time:764:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 1.10:GyroY: 0.12:gyroZ: -1.16
+
+time:872:accelX: -0.01:accelY: 0.20:accelZ: -0.97
+gyrolX: 0.55:GyroY: -0.18:gyroZ: -1.22
+
+time:979:accelX: -0.01:accelY: 0.21:accelZ: -0.98
+gyrolX: 0.37:GyroY: -0.24:gyroZ: -1.10
+
+time:1085:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.31:GyroY: -0.55:gyroZ: -1.10
+
+time:1193:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.31:GyroY: -0.31:gyroZ: -1.22
+
+time:1300:accelX: -0.01:accelY: 0.21:accelZ: -0.98
+gyrolX: 0.18:GyroY: -0.73:gyroZ: -1.10
+
+time:1408:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.55:GyroY: -0.37:gyroZ: -1.10
+
+time:1515:accelX: -0.01:accelY: 0.21:accelZ: -0.97
+gyrolX: -0.73:GyroY: -0.18:gyroZ: -1.04
+
+time:1623:accelX: -0.02:accelY: 0.20:accelZ: -0.98
+gyrolX: 0.49:GyroY: -1.22:gyroZ: -1.28
+
+time:1729:accelX: -0.01:accelY: 0.21:accelZ: -0.98
+gyrolX: 0.67:GyroY: -0.61:gyroZ: -1.28
+
+time:1836:accelX: -0.01:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.18:GyroY: -0.37:gyroZ: -1.28
+
+time:1944:accelX: -0.01:accelY: 0.21:accelZ: -0.97
+gyrolX: 1.53:GyroY: -0.18:gyroZ: -1.04
+
+time:2051:accelX: 0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.67:GyroY: 0.12:gyroZ: -1.16
+
+time:2159:accelX: -0.00:accelY: 0.21:accelZ: -0.98
+gyrolX: 0.31:GyroY: 0.06:gyroZ: -1.10
+
+time:2266:accelX: -0.01:accelY: 0.21:accelZ: -0.98
+gyrolX: 0.79:GyroY: -0.43:gyroZ: -1.16
+
+time:2374:accelX: 0.01:accelY: 0.21:accelZ: -0.98
+gyrolX: 0.79:GyroY: -1.95:gyroZ: -1.65
+
+time:2481:accelX: -0.01:accelY: 0.20:accelZ: -0.98
+gyrolX: -0.12:GyroY: -1.77:gyroZ: -1.46
+
+time:2588:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.61:GyroY: -0.18:gyroZ: -1.04
+
+time:2696:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.61:GyroY: -0.98:gyroZ: -1.10
+
+time:2803:accelX: -0.00:accelY: 0.21:accelZ: -0.98
+gyrolX: 0.43:GyroY: -0.49:gyroZ: -0.98
+
+time:2911:accelX: -0.00:accelY: 0.21:accelZ: -0.98
+gyrolX: 0.43:GyroY: -0.31:gyroZ: -0.98
+
+time:3018:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.37:GyroY: -0.24:gyroZ: -1.46
+
+time:3125:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.73:GyroY: -0.06:gyroZ: -1.16
+
+time:3233:accelX: -0.01:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.37:GyroY: -0.18:gyroZ: -1.04
+
+time:3339:accelX: -0.00:accelY: 0.21:accelZ: -0.97
+gyrolX: 0.43:GyroY: -0.49:gyroZ: -1.22
+
+time:3448:accelX: 0.02:accelY: 0.17:accelZ: -0.86
+gyrolX: 78.12:GyroY: -32.23:gyroZ: -18.25
+
+time:3556:accelX: -0.04:accelY: 0.22:accelZ: -1.05
+gyrolX: -18.55:GyroY: -4.33:gyroZ: -10.31
+
+time:3664:accelX: -0.01:accelY: 0.18:accelZ: -0.98
+gyrolX: 1.65:GyroY: -0.55:gyroZ: -0.37
+
+time:3772:accelX: 0.00:accelY: 0.20:accelZ: -1.10
+gyrolX: 4.39:GyroY: -2.20:gyroZ: -9.58
+
+time:3880:accelX: -0.20:accelY: 0.15:accelZ: -0.95
+gyrolX: 27.16:GyroY: 48.34:gyroZ: 17.46
+
+time:3989:accelX: 0.02:accelY: 0.15:accelZ: -0.99
+gyrolX: 3.42:GyroY: 9.34:gyroZ: 1.71
+
+time:4097:accelX: -0.03:accelY: 0.20:accelZ: -0.94
+gyrolX: 18.01:GyroY: -17.70:gyroZ: -5.74
+
+time:4206:accelX: -0.05:accelY: 0.10:accelZ: -0.95
+gyrolX: -33.75:GyroY: 6.65:gyroZ: 1.34
+
+time:4313:accelX: -0.06:accelY: 0.09:accelZ: -1.00
+gyrolX: -4.58:GyroY: -0.98:gyroZ: -5.49
+
+time:4421:accelX: -0.05:accelY: 0.10:accelZ: -0.99
+gyrolX: 4.46:GyroY: 2.87:gyroZ: -0.79
+
+time:4529:accelX: -0.04:accelY: 0.08:accelZ: -1.00
+gyrolX: 0.67:GyroY: -0.37:gyroZ: -0.67
+
+time:4637:accelX: -0.05:accelY: 0.10:accelZ: -1.00
+gyrolX: -3.91:GyroY: -3.23:gyroZ: -4.70
+
+time:4745:accelX: -0.03:accelY: 0.07:accelZ: -1.00
+gyrolX: 10.25:GyroY: 7.75:gyroZ: -2.01
+
+time:4853:accelX: -0.04:accelY: 0.07:accelZ: -1.01
+gyrolX: -1.22:GyroY: 23.32:gyroZ: -1.71
+
+time:4960:accelX: -0.05:accelY: 0.07:accelZ: -1.02
+gyrolX: 18.07:GyroY: -44.43:gyroZ: 1.46
+
+time:5069:accelX: -0.03:accelY: 0.08:accelZ: -1.00
+gyrolX: -5.49:GyroY: -4.94:gyroZ: -0.37
+
+time:5176:accelX: -0.04:accelY: 0.08:accelZ: -0.99
+gyrolX: -0.61:GyroY: -0.98:gyroZ: -3.11
+
+time:5285:accelX: -0.04:accelY: 0.07:accelZ: -0.99
+gyrolX: -0.31:GyroY: 2.32:gyroZ: 0.18
+
+time:5392:accelX: -0.04:accelY: 0.08:accelZ: -1.00
+gyrolX: 0.00:GyroY: -2.32:gyroZ: -6.29
+
+time:5500:accelX: -0.07:accelY: 0.08:accelZ: -0.93
+gyrolX: 7.93:GyroY: -21.91:gyroZ: -2.69
+
+time:5608:accelX: -0.02:accelY: 0.15:accelZ: -1.01
+gyrolX: -1.65:GyroY: -0.98:gyroZ: -1.71
+
+time:5716:accelX: -0.00:accelY: 0.17:accelZ: -0.99
+gyrolX: 1.28:GyroY: -0.31:gyroZ: -1.04
+
+time:5824:accelX: -0.01:accelY: 0.17:accelZ: -0.98
+gyrolX: 0.43:GyroY: -0.49:gyroZ: -0.98
+
+time:5931:accelX: -0.01:accelY: 0.17:accelZ: -0.99
+gyrolX: 0.67:GyroY: -0.85:gyroZ: -1.04
+
+time:6039:accelX: -0.00:accelY: 0.17:accelZ: -0.98
+gyrolX: 0.49:GyroY: -0.43:gyroZ: -1.04
+
+time:6146:accelX: -0.00:accelY: 0.17:accelZ: -0.98
+gyrolX: 1.16:GyroY: -0.37:gyroZ: -1.04
+
+time:6253:accelX: -0.01:accelY: 0.16:accelZ: -0.98
+gyrolX: 0.00:GyroY: -0.37:gyroZ: -1.10
+
+time:6362:accelX: -0.01:accelY: 0.17:accelZ: -0.98
+gyrolX: 1.04:GyroY: -0.49:gyroZ: -1.16
+
+time:6468:accelX: -0.00:accelY: 0.17:accelZ: -0.99
+gyrolX: 0.24:GyroY: -0.43:gyroZ: -1.34
+
+time:6577:accelX: -0.00:accelY: 0.16:accelZ: -0.99
+gyrolX: 0.49:GyroY: -0.61:gyroZ: -1.16
+
+time:6684:accelX: -0.01:accelY: 0.17:accelZ: -0.98
+gyrolX: 0.43:GyroY: -0.18:gyroZ: -0.85
+
+time:6791:accelX: 0.00:accelY: 0.17:accelZ: -0.98
+gyrolX: 0.24:GyroY: -0.55:gyroZ: -1.04
+
+time:6900:accelX: -0.05:accelY: 0.19:accelZ: -1.00
+gyrolX: 33.14:GyroY: 77.88:gyroZ: 16.60
+
+time:7008:accelX: -0.14:accelY: 0.27:accelZ: -0.95
+gyrolX: 39.06:GyroY: 42.48:gyroZ: -15.26
+
+time:7117:accelX: -0.26:accelY: 0.06:accelZ: -0.91
+gyrolX: -147.34:GyroY: 6.71:gyroZ: -3.11
+
+time:7225:accelX: -0.26:accelY: 0.04:accelZ: -0.98
+gyrolX: -41.56:GyroY: 83.50:gyroZ: 9.83
+
+time:7333:accelX: -0.43:accelY: -0.03:accelZ: -0.87
+gyrolX: -43.15:GyroY: 47.79:gyroZ: 7.63
+
+time:7442:accelX: -0.44:accelY: -0.08:accelZ: -0.90
+gyrolX: -1.95:GyroY: 9.28:gyroZ: 9.16
+
+time:7550:accelX: -0.42:accelY: -0.08:accelZ: -0.88
+gyrolX: 7.02:GyroY: 0.92:gyroZ: 7.93
+
+time:7659:accelX: -0.46:accelY: -0.08:accelZ: -0.90
+gyrolX: -4.09:GyroY: 8.61:gyroZ: 1.71
+
+time:7767:accelX: -0.46:accelY: -0.05:accelZ: -0.93
+gyrolX: 31.49:GyroY: -42.48:gyroZ: -5.13
+
+time:7875:accelX: -0.39:accelY: -0.02:accelZ: -0.94
+gyrolX: -1.46:GyroY: -9.89:gyroZ: -4.46
+
+time:7984:accelX: -0.41:accelY: -0.03:accelZ: -0.91
+gyrolX: 1.46:GyroY: 1.83:gyroZ: -7.02
+
+time:8093:accelX: -0.41:accelY: -0.02:accelZ: -0.89
+gyrolX: 5.13:GyroY: -4.09:gyroZ: -8.91
+
+time:8202:accelX: -0.39:accelY: -0.05:accelZ: -0.90
+gyrolX: 6.77:GyroY: 5.37:gyroZ: -11.78
+
+time:8310:accelX: -0.40:accelY: -0.05:accelZ: -0.94
+gyrolX: -24.90:GyroY: 15.01:gyroZ: -31.37
+
+time:8418:accelX: -0.33:accelY: -0.07:accelZ: -0.94
+gyrolX: 1.83:GyroY: -21.06:gyroZ: 2.99
+
+time:8527:accelX: -0.33:accelY: -0.05:accelZ: -0.94
+gyrolX: -1.77:GyroY: -10.19:gyroZ: -0.24
+
+time:8635:accelX: -0.40:accelY: -0.10:accelZ: -0.91
+gyrolX: -8.67:GyroY: 5.07:gyroZ: -0.24
+
+time:8744:accelX: -0.35:accelY: -0.08:accelZ: -0.94
+gyrolX: -14.89:GyroY: -6.47:gyroZ: -3.60
+
+time:8853:accelX: -0.33:accelY: -0.10:accelZ: -0.96
+gyrolX: 0.24:GyroY: -14.65:gyroZ: 2.81
+
+time:8961:accelX: -0.33:accelY: -0.10:accelZ: -0.94
+gyrolX: -2.32:GyroY: 3.23:gyroZ: 5.86
+
+time:9070:accelX: -0.35:accelY: -0.11:accelZ: -0.92
+gyrolX: 4.76:GyroY: 10.01:gyroZ: 5.07
+
+time:9178:accelX: -0.35:accelY: -0.10:accelZ: -0.93
+gyrolX: -0.49:GyroY: 1.95:gyroZ: 1.59
+
+time:9288:accelX: -0.35:accelY: -0.09:accelZ: -0.95
+gyrolX: -0.12:GyroY: -1.04:gyroZ: 0.24
+
+time:9395:accelX: -0.35:accelY: -0.10:accelZ: -0.93
+gyrolX: 5.37:GyroY: -2.44:gyroZ: -1.16
+
+time:9504:accelX: -0.35:accelY: -0.09:accelZ: -0.93
+gyrolX: 0.79:GyroY: -1.59:gyroZ: -1.59
+
+time:9613:accelX: -0.35:accelY: -0.09:accelZ: -0.93
+gyrolX: 2.08:GyroY: -0.85:gyroZ: -1.10
+
+time:9721:accelX: -0.35:accelY: -0.10:accelZ: -0.94
+gyrolX: 0.31:GyroY: -1.89:gyroZ: -1.40
+
+time:9830:accelX: -0.34:accelY: -0.09:accelZ: -0.93
+gyrolX: 1.59:GyroY: -1.04:gyroZ: -1.65
+
+time:9938:accelX: -0.34:accelY: -0.09:accelZ: -0.92
+gyrolX: -0.85:GyroY: -1.16:gyroZ: -0.98
+
+time:10046:accelX: -0.34:accelY: -0.09:accelZ: -0.94
+gyrolX: 1.77:GyroY: -1.95:gyroZ: -1.22
+
+time:10155:accelX: -0.34:accelY: -0.09:accelZ: -0.93
+gyrolX: -0.31:GyroY: 1.22:gyroZ: -0.37
+
+time:10263:accelX: -0.35:accelY: -0.09:accelZ: -0.95
+gyrolX: 0.98:GyroY: -1.28:gyroZ: -0.98
+
+time:10372:accelX: -0.33:accelY: -0.09:accelZ: -0.92
+gyrolX: 2.50:GyroY: -4.76:gyroZ: -1.59
+
+time:10480:accelX: -0.33:accelY: -0.09:accelZ: -0.94
+gyrolX: 0.79:GyroY: 0.67:gyroZ: -0.49
+
+time:10588:accelX: -0.33:accelY: -0.08:accelZ: -0.93
+gyrolX: -2.20:GyroY: 4.94:gyroZ: -0.06
+
+time:10697:accelX: -0.34:accelY: -0.09:accelZ: -0.94
+gyrolX: 1.46:GyroY: -0.85:gyroZ: -1.46
+
+time:10805:accelX: -0.34:accelY: -0.08:accelZ: -0.93
+gyrolX: 0.43:GyroY: -1.28:gyroZ: -1.40
+
+time:10915:accelX: -0.33:accelY: -0.08:accelZ: -0.91
+gyrolX: 1.71:GyroY: -0.43:gyroZ: -0.98
+
+time:11023:accelX: -0.33:accelY: -0.08:accelZ: -0.92
+gyrolX: 4.94:GyroY: 4.82:gyroZ: -2.38
+
+time:11131:accelX: -0.35:accelY: -0.07:accelZ: -0.94
+gyrolX: -0.06:GyroY: 0.85:gyroZ: -1.53
+
+time:11240:accelX: -0.36:accelY: -0.07:accelZ: -0.95
+gyrolX: -9.03:GyroY: 13.61:gyroZ: -0.18
+
+time:11347:accelX: -0.41:accelY: -0.09:accelZ: -0.90
+gyrolX: 2.20:GyroY: 1.10:gyroZ: -3.36
+
+time:11456:accelX: -0.35:accelY: -0.12:accelZ: -0.86
+gyrolX: -0.85:GyroY: 9.52:gyroZ: 13.06
+
+time:11564:accelX: -0.42:accelY: -0.10:accelZ: -0.92
+gyrolX: 1.40:GyroY: 8.00:gyroZ: 6.77
+
+time:11672:accelX: -0.38:accelY: -0.06:accelZ: -0.72
+gyrolX: -6.47:GyroY: -61.71:gyroZ: -1.95
+
+time:11782:accelX: -0.43:accelY: -0.10:accelZ: -0.89
+gyrolX: -5.31:GyroY: 10.62:gyroZ: -0.37
+
+time:11890:accelX: -0.48:accelY: -0.11:accelZ: -0.91
+gyrolX: 4.39:GyroY: -3.91:gyroZ: -0.79
+
+time:11999:accelX: -0.44:accelY: -0.10:accelZ: -0.88
+gyrolX: -2.56:GyroY: -0.92:gyroZ: 1.10
+
+time:12108:accelX: -0.45:accelY: -0.11:accelZ: -0.90
+gyrolX: 0.85:GyroY: 3.60:gyroZ: -1.46
+
+time:12216:accelX: -0.46:accelY: -0.11:accelZ: -0.88
+gyrolX: 1.34:GyroY: -1.40:gyroZ: -1.10
+
+time:12325:accelX: -0.45:accelY: -0.12:accelZ: -0.87
+gyrolX: -2.20:GyroY: 4.82:gyroZ: 0.12
+
+time:12434:accelX: -0.46:accelY: -0.12:accelZ: -0.87
+gyrolX: -2.50:GyroY: 7.02:gyroZ: 1.83
+
+time:12542:accelX: -0.47:accelY: -0.12:accelZ: -0.87
+gyrolX: -0.55:GyroY: 4.52:gyroZ: 0.00
+
+time:12652:accelX: -0.48:accelY: -0.13:accelZ: -0.87
+gyrolX: -1.28:GyroY: 1.34:gyroZ: -0.18
+
+time:12760:accelX: -0.49:accelY: -0.13:accelZ: -0.87
+gyrolX: -1.34:GyroY: -2.50:gyroZ: -0.67
+
+time:12870:accelX: -0.49:accelY: -0.14:accelZ: -0.86
+gyrolX: 0.73:GyroY: -7.51:gyroZ: -1.77
+
+time:12978:accelX: -0.48:accelY: -0.13:accelZ: -0.87
+gyrolX: 0.67:GyroY: 0.55:gyroZ: -1.28
+
+time:13086:accelX: -0.49:accelY: -0.14:accelZ: -0.86
+gyrolX: 0.00:GyroY: 1.77:gyroZ: -1.16
+
+time:13196:accelX: -0.49:accelY: -0.13:accelZ: -0.87
+gyrolX: -0.67:GyroY: 2.81:gyroZ: -1.22
+
+time:13304:accelX: -0.48:accelY: -0.13:accelZ: -0.86
+gyrolX: 0.24:GyroY: 0.92:gyroZ: 0.18
+
+time:13414:accelX: -0.49:accelY: -0.14:accelZ: -0.86
+gyrolX: -0.37:GyroY: 1.46:gyroZ: 0.06
+
+time:13523:accelX: -0.48:accelY: -0.14:accelZ: -0.87
+gyrolX: 1.04:GyroY: -2.69:gyroZ: -2.01
+
+time:13631:accelX: -0.48:accelY: -0.13:accelZ: -0.86
+gyrolX: 1.28:GyroY: -1.46:gyroZ: -1.04
+
+time:13740:accelX: -0.49:accelY: -0.14:accelZ: -0.86
+gyrolX: 0.85:GyroY: -1.46:gyroZ: -1.22
+
+time:13849:accelX: -0.49:accelY: -0.14:accelZ: -0.85
+gyrolX: -0.31:GyroY: 0.85:gyroZ: -0.31
+
+time:13958:accelX: -0.49:accelY: -0.13:accelZ: -0.86
+gyrolX: -0.49:GyroY: 2.32:gyroZ: -0.12
+
