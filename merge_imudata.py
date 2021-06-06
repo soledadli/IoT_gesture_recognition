@@ -2,10 +2,10 @@ import pandas as pd
 import os.path
 #from config import *
 
-GESTURES = ["random0","random5","test0","test1"] #different names
-MAIN_GESTURE= ["random","test"] # e.g walk
-clean_dir = 'clean_test_data/'
-merge_dir = 'merge_data/'
+GESTURES = ["walk","still","flap"] #different names
+MAIN_GESTURE= ["walk","still","flap"] # e.g walk
+clean_dir = 'data_pipeline/clean_test_data/'
+merge_dir = 'data_pipeline/merge_data/'
 gesture = "r"
 file_holder = []
 
@@ -44,10 +44,9 @@ def complete_file(gesture_lst, name):
 
 
 if __name__ == "__main__":
- lst = merge_data("random")
- lst2 = merge_data("test")
- df = pd.read_csv(lst)
- dfs = complete_file(["test","random"],"test0")
- print(len(dfs))
+# lst = merge_data("walk")
+# lst2 = merge_data("still")
+# df = pd.read_csv(lst)
+ dfs = complete_file(["walk","still","flap"],"walk_still_flap")
 
 
