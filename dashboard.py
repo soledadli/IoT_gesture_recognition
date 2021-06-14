@@ -21,7 +21,7 @@ watch_state = 'waiting'
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+model = tf.keras.models.load_model('models/lstm_model_2.h5')
 
 app.layout = html.Div([
 
@@ -89,7 +89,7 @@ app.layout = html.Div([
 
     dcc.Interval(
                         id='interval-component',
-                        interval=10*1000,  # in milliseconds 10*60*
+                        interval=2*60*1000,  # in milliseconds 10*60*
                         n_intervals=0
             )
 ]
@@ -108,14 +108,16 @@ def update_predictions(intervals, radiochoice, gesture,tab):
 
     data_loading = False
     if radiochoice == 'recording_true':
-        watch_state = 'recording_true'
-        print("True")
-        #organize_imu_data()
-        #predict_motion(model, test_dir, ["walk","flap","still"])
+      #  organize_imu_data()
+        print('organizing')
+      #  predict_motion(model, test_dir, ["walk","flap","still"])
 
     if radiochoice == 'recording_false':
         watch_state = 'recording_false'
         print('stopped')
+
+    if radiochoice == 'waiting':
+        print('waiting')
 
     list_of_files = glob.glob( 'predictions/*.csv')
     latest_file = max(list_of_files, key=os.path.getctime)
@@ -123,15 +125,15 @@ def update_predictions(intervals, radiochoice, gesture,tab):
     df = pd.read_csv(latest_file)
     m_df = df.groupby(['hour_min', 'motion']).count().reset_index()
     bar_list = list()
-    print(gesture)
+ #   print(gesture)
 
     if tab == 'tab-1':
         for motion in m_df['motion'].unique().tolist():
             bar = go.Bar(name=motion, x=m_df[m_df['motion'] == motion]['hour_min'].to_list(),
                    y=m_df[m_df['motion'] == motion]['predictions'].to_list(),
-                         texttemplate = "%{y}",
-                         textposition = 'inside')
-
+                         texttemplate="%{y}",
+                         textposition='inside',
+                         )
             bar_list.append(bar)
 
             fig = go.Figure(data=

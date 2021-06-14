@@ -30,21 +30,26 @@ def train_lstm_model(X_train, y_train, unit=128, dropout_rate=0.5):
 
 
 if __name__ == "__main__":
-    dfs = pd.read_csv("data_pipeline/merge_data/walk_flap_still.csv")
+    dfs = pd.read_csv("data_pipeline/merge_data/still_flap_walk.csv")
     X, y = segement_data(
-        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], dfs.activity, 5, 1)
+        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], dfs.activity, 10, 2)
     X_train, X_test, y_train, y_test = split_data(X, y)
+    print("y_train_before",y_train)
     y_train, y_test = encode_data(y_train, y_test)
+    print("y_train", y_train)
     model = train_lstm_model(X_train, y_train)
     history = model.fit(
         X_train, y_train,
         epochs=10,
         batch_size=45,
         validation_split=0.2)
-    model.save('models/lstm_model_2.h5')
+    model.save('models/lstm_model_sfw_4.h5')
 
     score = model.evaluate(X_test, y_test, verbose=0)
     print(f'Test loss: {score[0]} / Test accuracy: {score[1]}')
     predictions = model.predict(X_test)
     category = np.argmax(predictions, axis=1)
     print("categorization: ", category)
+    print("y_test", y_test)
+
+

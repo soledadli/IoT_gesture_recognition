@@ -78,7 +78,7 @@ def take_imu_data():
     fullname = hour + '.csv'
     # Put the file in one specific directory
     completeName = os.path.join(main_dir, fullname)
-    samples = 100
+    samples = 200
     line = 0
     for line in range(samples):
         with open(completeName, 'a') as f:
@@ -110,11 +110,12 @@ def predict_motion(model, test_dir, motion:list):
     dfs = scale_data(df, "test")
     # preprocessing the data for model prediction
     X = segement_predict_data(
-        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], 5, 1)
+        dfs[['aX', 'aY', "aZ", "gX", "gY", "gZ"]], 20, 5)
     # predict the model
     predictions = model.predict(X)
     # identifying predicted motions
     category = np.argmax(predictions, axis=1)
+    print(category)
     for i in category:
         # appending new predictions to the predict_file
         predict_df = predict_df.append({"datafile": latest_file_name, "recorded_time" : latest_file_time, "hour_min": latest_file_hour,
@@ -134,7 +135,7 @@ def predict_motion(model, test_dir, motion:list):
 if __name__ == "__main__":
   # load Model
     model = tf.keras.models.load_model('models/lstm_model_2.h5')
-    schedule.every(5).minutes.do(lambda: predict_motion(model, test_dir, ["walk","flap","still"]))
+    schedule.every(1).minutes.do(lambda: predict_motion(model, test_dir, ["still","flap","walk"]))
     while True:
         organize_imu_data()
         schedule.run_pending()

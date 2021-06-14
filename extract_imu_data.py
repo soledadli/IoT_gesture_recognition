@@ -23,7 +23,7 @@ def log_imu_data( ):
     # Put the file in one specific directory
     completeName = os.path.join(main_dir, fullname)
     # 44 is like one minute sample // 2765 5 min sample
-    samples = 2765 # 5 min data
+    samples = 5530 # 5 min data - 2765
     line = 0
     # Take specific samples from Microcontrollers
     while True:
