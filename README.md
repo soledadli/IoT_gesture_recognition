@@ -9,7 +9,7 @@ Q1: The Arduino IDE cannot recognize the port for Movuino
 - Check whether the connection is good. 
   - Check whether the red LED, charging indicator light, is on.
   - Check whether the board is on. If not, press the black switch for 2 seconds. 
-- Double-click the reset button on the Movuino board.
+- Double-click the reset button on the Movuino board. (Red LED light will blink when you reset the board)
 - Use the Debugging Board for testing codes
 
 Q2: Having trouble compiling codes on Movuino (There is a higher chance that when compiling codes on Movuino, Arduino IDE may crush more often when there are bugs on the code or the model size is too big.)
@@ -19,3 +19,10 @@ Q2: Having trouble compiling codes on Movuino (There is a higher chance that whe
 - Verify the codes before you uploading them to Movuino
 - Try uploading the imu data parts and test whether they work. If so, upload the tensorflow parts and the model part then.
 - Unplug the board, replug it, and reupload the codes 
+
+Q3: Disk get ejected when after uploading the sketch
+- Open the Serial Monitor, the sketch may be already successfully uploaded.
+- Double-click the reset button, and replug it back to the computer, and run the sketch. 
+
+Q4: After uploading the sketch, there is no Serial.println information on Serial Monitor
+- Parts of your code may crush. You may want to debug your code paragraphs by paragraphs 
