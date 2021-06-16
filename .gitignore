@@ -1,4 +1,4 @@
-.idea
+.idea/*
 .data_pipeline
 .DS_Store
 data_pipeline/*
