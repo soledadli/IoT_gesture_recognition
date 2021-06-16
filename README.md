@@ -1,7 +1,13 @@
 # Movuino Gesture Recognition (TinyML)
 ## Table of Contents
-* [Troubleshooting](#trouble-shooting)
+* [Flowcharts](#flowchart)
+* [Movuino Troubleshooting](#trouble-shooting)
 
+## Flowcharts
+### Use Movuino to Collect Gesture Data
+![collect_data_with_movuino](https://github.com/soledadli/Movuino_gesture_recognition/blob/main/flowcharts_raw/photo/Movuino_Collect_Data.jpg?raw=true)
+### Predict Motions & Plot out Real-time Predictions
+![dashboard](https://github.com/soledadli/Movuino_gesture_recognition/blob/main/flowcharts_raw/photo/Dashoboard_Gesture_Recognition.png?raw=true)
 
 ## Movuino Troubleshooting 
 Q1: The Arduino IDE cannot recognize the port for Movuino
