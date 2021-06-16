@@ -54,6 +54,7 @@ def clean_gyrodata(df):
 
 
 def clean_imudata(df):
+    print("clean")
     col = sorted(df)[0]
     # Separate Gyro data and Accel data out
     file = df.drop(df[df[col].apply(lambda x: x.startswith('g'))].index).reset_index(drop=True)
@@ -72,8 +73,8 @@ def clean_imudata(df):
 if __name__ == "__main__":
     file_name, completeName = log_imu_data( )
     df = pd.read_csv(completeName)
-   # df = clean_imudata(df)
-   # cleanName = os.path.join(clean_dir, file_name)
-   # df.to_csv(cleanName)
+    df = clean_imudata(df)
+    cleanName = os.path.join(clean_dir, file_name)
+    df.to_csv(cleanName)
     print((f"Lengh {len(df)} for the file '{file_name}'."))
 
