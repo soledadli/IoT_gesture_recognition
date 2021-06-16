@@ -1,74 +1,152 @@
-<mxfile host="app.diagrams.net" modified="2021-06-15T08:06:05.697Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36" etag="0A2k5XKFUS8u30pkYmSh" version="14.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-16T10:08:17.834Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36" etag="GNQv6-yn9cBXX3uiX6Bd" version="14.7.8" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1515" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2965" dy="1535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="wSktirITTQsZBVln2ylv-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.521;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="l8oqYocbX1GZS1B2UIZt-4">
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-49" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="40" width="1330" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Uploading &lt;font color=&quot;#ffb570&quot;&gt;&lt;b&gt;Peripheral_Grab.ino&lt;/b&gt;&lt;/font&gt; to Movuino&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="314.527027027027" y="271.57894736842104" width="161.75675675675674" height="75.78947368421052" as="geometry" />
+        </mxCell>
+        <mxCell id="l8oqYocbX1GZS1B2UIZt-2" value="&lt;blockquote style=&quot;line-height: 90% ; font-size: 14px&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;font style=&quot;font-size: 14px&quot; face=&quot;Lucida Console&quot;&gt;Data Collection for&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;font style=&quot;font-size: 14px&quot; face=&quot;Lucida Console&quot;&gt;Training the TinyML Model&lt;/font&gt;&lt;/font&gt;&lt;br&gt;&lt;/b&gt;&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;spacing=4;spacingTop=0;spacingLeft=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry width="335.49549549549545" height="101.05263157894736" as="geometry" />
+        </mxCell>
+        <mxCell id="l8oqYocbX1GZS1B2UIZt-4" value="Wearing the Movuino watch and prepare to collect motion data" style="rounded=0;whiteSpace=wrap;html=1;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="319.0202702702702" y="448.4210526315789" width="152.77027027027026" height="63.157894736842096" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="WIyWlLk6GJQsqaUBKTNV-3" target="l8oqYocbX1GZS1B2UIZt-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Uploading &lt;font color=&quot;#ffb570&quot;&gt;Peripheral_Grab.ino&lt;/font&gt; to Movuino&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="272.5" y="220" width="135" height="60" as="geometry" />
+        <mxCell id="l8oqYocbX1GZS1B2UIZt-12" value="IMU Sensor:&lt;br&gt;Accelerometers,&lt;br&gt;Gyroscopes,&lt;br&gt;Magnetometer&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry y="107.36842105263156" width="335.49549549549545" height="88.42105263157893" as="geometry" />
         </mxCell>
-        <mxCell id="l8oqYocbX1GZS1B2UIZt-2" value="&lt;blockquote style=&quot;line-height: 90% ; font-size: 14px&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;font style=&quot;font-size: 14px&quot; face=&quot;Lucida Console&quot;&gt;Data Collection for&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;font style=&quot;font-size: 14px&quot; face=&quot;Lucida Console&quot;&gt;Training the TinyML Model&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;font style=&quot;font-size: 14px&quot; face=&quot;Lucida Console&quot;&gt;(IMU sensor as Example)&lt;/font&gt;&lt;/font&gt;&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;spacing=4;spacingTop=0;spacingLeft=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="10" y="5" width="250" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8oqYocbX1GZS1B2UIZt-4" target="wSktirITTQsZBVln2ylv-2">
+        <mxCell id="wSktirITTQsZBVln2ylv-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" source="l8oqYocbX1GZS1B2UIZt-14" target="l8oqYocbX1GZS1B2UIZt-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="l8oqYocbX1GZS1B2UIZt-4" value="Wearing the Movuino watch and be prepare to collect motion data" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="272.5" y="360" width="130" height="50" as="geometry" />
+        <mxCell id="l8oqYocbX1GZS1B2UIZt-14" value="Use the same orientation &amp;amp; position of the Movuino to train data &amp;amp; predict motions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="47.927927927927925" y="442.1052631578947" width="173.7387387387387" height="75.78947368421052" as="geometry" />
         </mxCell>
-        <mxCell id="l8oqYocbX1GZS1B2UIZt-12" value="IMU Sensor:&lt;br&gt;Accelerometers,&lt;br&gt;Gyroscopes,&lt;br&gt;Magnetometer&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="10" y="90" width="250" height="70" as="geometry" />
+        <mxCell id="wSktirITTQsZBVln2ylv-2" value="Uploading &lt;font color=&quot;#ffb570&quot;&gt;&lt;b&gt;Central.ino&lt;/b&gt;&lt;/font&gt; to Adafruit Feather&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="611.081081081081" y="265.2631578947368" width="161.75675675675674" height="82.10526315789473" as="geometry" />
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="l8oqYocbX1GZS1B2UIZt-14" target="l8oqYocbX1GZS1B2UIZt-4">
+        <mxCell id="wSktirITTQsZBVln2ylv-3" value="&lt;b&gt;Run &lt;font color=&quot;#ffb570&quot;&gt;extract_imu_data.py&lt;/font&gt;&lt;/b&gt;&lt;br&gt;on terminal&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="934.5945945945945" y="435.78947368421046" width="161.75675675675674" height="88.42105263157893" as="geometry" />
+        </mxCell>
+        <mxCell id="wSktirITTQsZBVln2ylv-7" value="Send data via&lt;br&gt;Bluetooth" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="484.072072072072" y="435.78947368421046" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wSktirITTQsZBVln2ylv-10" value="Send data via Pyserial" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="790.8108108108107" y="442.1052631578947" width="143.78378378378378" height="25.26315789473684" as="geometry" />
+        </mxCell>
+        <mxCell id="wSktirITTQsZBVln2ylv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" source="wSktirITTQsZBVln2ylv-12" target="wSktirITTQsZBVln2ylv-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="l8oqYocbX1GZS1B2UIZt-14" value="Use the same orientation &amp;amp; position of the Movuino to train data &amp;amp; predict motions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="50" y="355" width="145" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-2" value="Uploading &lt;font color=&quot;#ffb570&quot;&gt;Central.ino&lt;/font&gt; to Adafruit Feather&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="520" y="350" width="135" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wSktirITTQsZBVln2ylv-3" target="wSktirITTQsZBVln2ylv-2">
+        <mxCell id="wSktirITTQsZBVln2ylv-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="pghVtkkaWaZ8QIK8cxO6-49" source="wSktirITTQsZBVln2ylv-12" target="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-3" value="Run &lt;font color=&quot;#ffb570&quot;&gt;extract_imu_data.py&lt;/font&gt;&lt;br&gt;from terminal&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="790" y="350" width="135" height="70" as="geometry" />
+        <mxCell id="wSktirITTQsZBVln2ylv-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" source="wSktirITTQsZBVln2ylv-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="692.5585585585585" y="303.1578947368421" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-7" value="Send data via&lt;br&gt;Bluetooth" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="414" y="350" width="90" height="30" as="geometry" />
+        <mxCell id="wSktirITTQsZBVln2ylv-12" value="Computer" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="575.1351351351351" y="107.36842105263156" width="233.64864864864862" height="88.42105263157893" as="geometry" />
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-10" value="Extract data via Pyserial" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="670" y="355" width="120" height="20" as="geometry" />
+        <mxCell id="wSktirITTQsZBVln2ylv-14" value="Terminal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="898.6486486486484" y="157.89473684210523" width="71.89189189189189" height="25.26315789473684" as="geometry" />
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wSktirITTQsZBVln2ylv-12" target="wSktirITTQsZBVln2ylv-3">
+        <mxCell id="wSktirITTQsZBVln2ylv-18" value="Arduino IDE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="440.3378378378378" y="157.89473684210523" width="71.89189189189189" height="25.26315789473684" as="geometry" />
+        </mxCell>
+        <mxCell id="wSktirITTQsZBVln2ylv-19" value="Arduino IDE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="620.0675675675675" y="233.68421052631575" width="71.89189189189189" height="25.26315789473684" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="wSktirITTQsZBVln2ylv-24" target="wSktirITTQsZBVln2ylv-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wSktirITTQsZBVln2ylv-12" target="WIyWlLk6GJQsqaUBKTNV-3">
+        <mxCell id="wSktirITTQsZBVln2ylv-24" value="git clone the repository to local computer" style="rounded=1;whiteSpace=wrap;html=1;" parent="pghVtkkaWaZ8QIK8cxO6-49" vertex="1">
+          <mxGeometry x="578.1306306306305" y="6.31578947368421" width="227.65765765765764" height="50.52631578947368" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.363;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="pghVtkkaWaZ8QIK8cxO6-0" target="wSktirITTQsZBVln2ylv-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="993.3063063063062" y="637.8947368421052" />
+              <mxPoint x="993.3063063063062" y="637.8947368421052" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="pghVtkkaWaZ8QIK8cxO6-0" target="l8oqYocbX1GZS1B2UIZt-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wSktirITTQsZBVln2ylv-12" target="wSktirITTQsZBVln2ylv-2">
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="pghVtkkaWaZ8QIK8cxO6-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1015.4729729729728" y="852.6315789473683" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-0" value="IMU data are compiled locally" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry x="937.59009009009" y="663.157894736842" width="155.76576576576574" height="69.47368421052632" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="wSktirITTQsZBVln2ylv-3" target="pghVtkkaWaZ8QIK8cxO6-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-12" value="Computer" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="490" y="120" width="195" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-14" value="Terminal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="760" y="130" width="60" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-18" value="Arduino IDE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="377.5" y="130" width="60" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-19" value="Arduino IDE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="527.5" y="220" width="60" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="wSktirITTQsZBVln2ylv-24" target="wSktirITTQsZBVln2ylv-12">
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="pghVtkkaWaZ8QIK8cxO6-10" target="wSktirITTQsZBVln2ylv-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wSktirITTQsZBVln2ylv-24" value="git clone the repository to local computer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="527.5" y="15" width="120" height="45" as="geometry" />
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-10" value="Plug Adafruit Feather to the computer to receive the data&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry x="602.0945945945945" y="445.2631578947368" width="179.7297297297297" height="69.47368421052632" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="l8oqYocbX1GZS1B2UIZt-4" target="pghVtkkaWaZ8QIK8cxO6-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="wSktirITTQsZBVln2ylv-2" target="pghVtkkaWaZ8QIK8cxO6-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-17" value="name the file after the motion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry x="1018.4684684684682" y="574.7368421052631" width="86.86936936936935" height="25.26315789473684" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-20" value="Rerun the python script to collect 2 recording" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry x="895.054054054054" y="574.7368421052631" width="83.87387387387386" height="25.26315789473684" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-24" value="Reopen the watch for the second recording&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry x="575.1351351351351" y="663.157894736842" width="263.6036036036036" height="25.26315789473684" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-35" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1186.216216216216" y="764.2105263157894" as="sourcePoint" />
+            <mxPoint x="287.56756756756755" y="763.5789473684209" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-36" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1186.216216216216" y="398.52631578947364" as="sourcePoint" />
+            <mxPoint x="287.56756756756755" y="397.8947368421052" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-37" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1186.216216216216" y="764.2105263157894" as="sourcePoint" />
+            <mxPoint x="1186.216216216216" y="397.8947368421052" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-38" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="287.56756756756755" y="764.2105263157894" as="sourcePoint" />
+            <mxPoint x="287.56756756756755" y="397.8947368421052" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-39" value="Continue the procedures&lt;br&gt;until enough data are collected&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;" vertex="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry x="1198.198198198198" y="498.94736842105254" width="131.8018018018018" height="126.31578947368419" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-44" value="Run&lt;br&gt;&lt;b&gt;&lt;font color=&quot;#ffb570&quot;&gt;merge_imudata.py&lt;/font&gt;&lt;/b&gt; on terminal to merge all the data" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry x="937.59009009009" y="827.3684210526313" width="161.75675675675674" height="88.42105263157893" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-45" value="Open the &lt;b&gt;&lt;font color=&quot;#ffb570&quot;&gt;Google Colab link&lt;/font&gt;&lt;/b&gt; to train the TinyML model&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="pghVtkkaWaZ8QIK8cxO6-49">
+          <mxGeometry x="937.59009009009" y="991.5789473684209" width="161.75675675675674" height="88.42105263157893" as="geometry" />
+        </mxCell>
+        <mxCell id="pghVtkkaWaZ8QIK8cxO6-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="pghVtkkaWaZ8QIK8cxO6-49" source="pghVtkkaWaZ8QIK8cxO6-44" target="pghVtkkaWaZ8QIK8cxO6-45">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
