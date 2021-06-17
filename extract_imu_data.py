@@ -23,7 +23,6 @@ def log_imu_data( ):
     # Put the file in one specific directory
     completeName = os.path.join(main_dir, fullname)
     # 44 is like one minute sample // 2765 5 min sample
-    samples = 2765 # 5 min data
     line = 0
     # Take specific samples from Microcontrollers
     while True:
@@ -71,7 +70,7 @@ def clean_imudata(df):
 
 if __name__ == "__main__":
     file_name, completeName = log_imu_data( )
-    df = pd.read_csv(completeName)
+ #   df = pd.read_csv(completeName)
    # df = clean_imudata(df)
    # cleanName = os.path.join(clean_dir, file_name)
    # df.to_csv(cleanName)
