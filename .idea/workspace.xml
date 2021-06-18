@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80e8929b-51e7-499c-abd7-4831f1814e5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pipeline/raw_data/22:58:15.675311.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pipeline/raw_data/22:59:26.728542.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pipeline/raw_data/22:59:33.486234.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pipeline/raw_data/23:04:26.179423.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pipeline/raw_data/23:09:26.370536.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pipeline/raw_data/23:14:26.263191.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pipeline/raw_data/23:19:25.450454.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pipeline/raw_data/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extract_imu_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract_imu_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +88,7 @@
       <workItem from="1622710261570" duration="2738000" />
       <workItem from="1622713611094" duration="2962000" />
       <workItem from="1623853585917" duration="2138000" />
-      <workItem from="1623940862682" duration="299000" />
+      <workItem from="1623940862682" duration="1298000" />
     </task>
     <servers />
   </component>
