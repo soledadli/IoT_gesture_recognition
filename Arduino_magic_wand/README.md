@@ -37,11 +37,17 @@
     - The countinous count must be equal or larger than the `kConsecutiveInferenceThresholds` (See the explanation in Concepts part) to finalize its predictions.
     - If your `continuous_count` is always smaller than required thresholds from `kConsecutiveInferenceThresholds`, you can go to `arduino_constants.cpp` and 
     lower down the numbers.
+    
     ```c++
     The original setup is: const int kConsecutiveInferencessholds[3] = {8, 5, 4}; 
     // 8 is for W; 5 is for Ring; 4 is for Slope.
     // You can test with the {8, 5, 4} numbers untill the predictions fit with your Arduino. 
     ```
+   
+     - <img width="192" alt="Screenshot 2021-06-17 at 10 36 26" src="https://user-images.githubusercontent.com/67457005/122424926-66637880-cf8f-11eb-8154-e3ca21583d9a.png">
+     - As the picture shows, the continuous counts are 
+    
+    
 
 ## Concepts Explanation 
 1. `kConsecutiveInferenceThresholds`:<br />
